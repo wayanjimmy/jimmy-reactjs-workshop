@@ -53,7 +53,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch("http://product-list.glitch.me/")
+    fetch("https://product-list.glitch.me/")
       .then(response => response.json())
       .then(products => {
         this.setState({ products: products });
